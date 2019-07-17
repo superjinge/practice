@@ -38,7 +38,7 @@
         <elasticsearch.version>6.2.1</elasticsearch.version>
         <guava.version>24.0-jre</guava.version>
     </properties>
-    <!--test-->
+    <!--producer-->
     <dependencyManagement>
         <dependencies>
             <dependency>

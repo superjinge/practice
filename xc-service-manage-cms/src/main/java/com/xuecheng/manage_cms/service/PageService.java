@@ -283,7 +283,7 @@ public class PageService {
 
             //根据文件id取文件
 
-            GridFSFile gridFSFile = gridFsTemplate.findOne(Query.query(Criteria.where("_id").is("5d25ea949754d8390cc7e28f")));
+            GridFSFile gridFSFile = gridFsTemplate.findOne(Query.query(Criteria.where("_id").is("5d274b889754d84be852d8e5")));
 
             //打开下载流对象
             GridFSDownloadStream gridFSDownloadStream =

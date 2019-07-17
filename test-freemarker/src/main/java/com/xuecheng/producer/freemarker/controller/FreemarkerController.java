@@ -1,6 +1,6 @@
-package com.xuecheng.test.freemarker.controller;
+package com.xuecheng.producer.freemarker.controller;
 
-import com.xuecheng.test.freemarker.model.Student;
+import com.xuecheng.producer.freemarker.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

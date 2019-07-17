@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: test-freemarker #指定服务名
+    name: producer-freemarker #指定服务名
   freemarker:
     cache: false  #关闭模板缓存，方便测试
     settings:

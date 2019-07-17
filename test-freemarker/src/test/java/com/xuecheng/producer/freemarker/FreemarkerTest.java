@@ -1,6 +1,6 @@
-package com.xuecheng.test.freemarker;
+package com.xuecheng.producer.freemarker;
 
-import com.xuecheng.test.freemarker.model.Student;
+import com.xuecheng.producer.freemarker.model.Student;
 import freemarker.cache.StringTemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;

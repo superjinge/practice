@@ -1,4 +1,4 @@
-package com.xuecheng.test.freemarker.model;
+package com.xuecheng.producer.freemarker.model;
 
 import lombok.Data;
 import lombok.ToString;
