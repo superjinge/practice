@@ -20,6 +20,9 @@ public class RabbitConfig {
     public static final String QUEUE_INFORM_EMAIL = "queue_inform_email";
     public static final String QUEUE_INFORM_SMS = "queue_inform_sms";
     public static final String EXCHANGE_TOPICS_INFORM = "exchange_topics_inform";
+    public static final String ROUTINGKEY_EMAIL = "inform.#.email.#";
+    public static final String ROUTINGKEY_SMS = "inform.#.sms.#";
+
 
     //声明交换机
     @Bean(EXCHANGE_TOPICS_INFORM)
@@ -56,7 +59,7 @@ public class RabbitConfig {
                                 @Qualifier(EXCHANGE_TOPICS_INFORM) Exchange exchange) {
         return BindingBuilder.bind(queue)
                 .to(exchange)
-                .with("inform.#.email.#")
+                .with(ROUTINGKEY_EMAIL)
                 .noargs();
     }
 
@@ -65,7 +68,7 @@ public class RabbitConfig {
                               @Qualifier(EXCHANGE_TOPICS_INFORM) Exchange exchange) {
         return BindingBuilder.bind(queue)
                 .to(exchange)
-                .with("inform.#.sms.#")
+                .with(ROUTINGKEY_SMS)
                 .noargs();
     }
 }
